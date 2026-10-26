@@ -24,3 +24,19 @@ function trivia1() {
         triviaAnswer.innerHTML = fname + ", you are right!"
     }
 }
+function ttaol1() {
+    let ttoalAnswer = document.getElementById("ttaol1-answer");
+    let truth1selected = document.getElementById("truth1").checked;
+    let lieselected = document.getElementById("lie").checked;
+    let truth2selected = document.getElementById("truth2").checked;
+
+    if (truth1selected) {
+        ttoalAnswer.innerHTML = fname + ", you are wrong."
+    }
+    else if (lieselected) {
+        ttoalAnswer.innerHTML = fname + ", you are right!."
+    }
+    else if (truth2selected) {
+        ttoalAnswer.innerHTML = fname + ", you are wrong."
+    }
+}
